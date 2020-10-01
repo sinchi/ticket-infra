@@ -22,10 +22,9 @@ metadata:
   name: auth-srv
 spec:
   selector:
-    app: auth
-  type: ClusterIP
+    app: auth  
   ports:
-    - name: auth-srv
+    - name: auth
       protocol: TCP
       port: 3000
       targetPort: 3000
