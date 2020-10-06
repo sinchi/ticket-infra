@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: auth
-          image: ayoub/auth
+          image: sinchi/ticketing-auth
+          imagePullPolicy: IfNotPresent
           env:
             - name: JWT_KEY
               valueFrom:
